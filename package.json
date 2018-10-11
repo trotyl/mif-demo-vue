@@ -1,0 +1,27 @@
+{
+  "name": "mif-demo-vue",
+  "version": "1.0.0",
+  "main": "./bundles/demo-vue.umd.js",
+  "repository": "https://github.com/trotyl/mif-demo-vue.git",
+  "author": "Trotyl Yu <trotyl@qq.com>",
+  "license": "MIT",
+  "private": true,
+  "types": "./esm5/index.d.ts",
+  "scripts": {
+    "build": "yarn build:tsc && yarn build:rollup && yarn build:rollup-imports",
+    "build:tsc": "tsc -p tsconfig.json",
+    "build:rollup": "rollup -c rollup.config.js",
+    "build:rollup-imports": "rollup -c rollup-imports.config.js"
+  },
+  "devDependencies": {
+    "rollup": "^0.66.6",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-replace": "^2.1.0",
+    "typescript": "^3.1.2"
+  },
+  "dependencies": {
+    "moment": "^2.22.2",
+    "tslib": "^1.9.3",
+    "vue": "^2.5.17"
+  }
+}

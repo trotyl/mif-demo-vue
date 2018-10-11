@@ -1,0 +1,4 @@
+node_modules/
+esm5/
+*.mif.js
+mif-meta.json
